@@ -1,0 +1,21 @@
+body {
+    background-color: #F5F5F5;
+}
+
+.logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    border-left: 2px solid grey;
+    border-right: 2px solid grey;
+    padding: 20px;
+    
+}
+
+.recuperar-datos {
+    margin: 10px;
+    padding: 5px;
+    
+}

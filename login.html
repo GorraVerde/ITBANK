@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles-login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- PRIMERA FILA -->
+        <div class="col-7 logo-container">
+          <img
+            src="Imagenes/logoITBANK.png"
+            class="logo"
+            alt="logo ITBANK"
+            width="200px"
+          />
+          <hr>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- SEGUNDA FILA -->
+        <div class="col-7">
+          <h1>Hola! Te damos la bienvenida a ITBANK</h1>
+          <div class="text-center">
+            <br>
+            <img src="#" alt="Imagen" width="70%">
+          </div>
+        </div>
+
+        <div class="col-5">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Tu Usuario</label>
+              <input
+                type="text"
+                class="form-control"
+                id="usuario"
+                aria-describedby="usuario"
+                placeholder="Usuario"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="clave">Tu Clave</label>
+              <input
+                type="password"
+                class="form-control"
+                id="clave"
+                placeholder="Clave"
+              />
+            </div>
+            <div class="form-group form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="recordarme"
+                >Recordarme</label
+              >
+            </div>
+            <div class="alert alert-danger text-center" role="alert">
+              No compartas tu contraseña con nadie
+            </div>
+            <button type="button" class="btn btn-primary btn-lg btn-block">
+              Iniciar sesión
+            </button>
+            <div class="recuperar-datos text-center">
+              <a href="#">¿Olvidaste tu usuario o contraseña?</a> 
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
