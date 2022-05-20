@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>ITBANK</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="HomeBank.css">
 </head>
 
 <body>
@@ -19,25 +19,89 @@
         <div id="perfil">
             <img class="img usr" src="Imagenes/pfp.jpg">
         </div>
-        <div id="monto"> $2000,00 </div>
-        <div id="inversiones"> Inversiones </div>
-        <div id="enviarDinero"> Enviar / Recibir dinero </div>
-        <div id="pagarServicios"> Pagar servicios </div>
-        <div id="prestamos"> Prestamos </div>
+        <div id="monto" class="normal"> $6000,00 </div>
+        <div id="cuadro">
+
+            <div id="inversiones" class="link"> Inversiones </div>
+            <div id="enviarDinero" class="link"> Enviar / Recibir dinero </div>
+            <div id="pagarServicios" class="link"> Pagar servicios </div>
+            <div id="prestamos" class="link"> Prestamos </div>
+        </div>
         <div id="movimientos">
+            <!-- Hago varias sub grillas aca con diferentes clases ya que varias comparten las mismas caracteristicas, asi para compactar un poco el codigo.
+            les puse ID a cada uno tambien por si despues hay que hacer referencia a alguno individualmente con JavaScript como lo puse en el Readme. -->
             <div id="transferencia1">
-                <div id="img1"></div>
-                <div id="mov1" class="movim">Pago becas Santender</div>
-                <div id="tipo1" class="extradata">Transferencia</div>
-                <div id="mont1" class="montoNeg">$4000</div>
-                <div id="fech1" class="extradata">07/12/18</div>
+                <p id="tipoMov1" class="tipoMovimiento">Sa</p>
+                <p id="mov1" class="movim">Pago becas Santender</p>
+                <p id="tipo1" class="info extradata">Transferencia</p>
+                <p id="mont1" class="monto negativo">$4.000,00</p>
+                <p id="fech1" class="fecha extradata">07/12/18</p>
             </div>
             <div id="transferencia2">
+                <p id="tipoMov2" class="tipoMovimiento">Su</p>
+                <p id="mov2" class="movim">Pago super</p>
+                <p id="tipo2" class="info extradata">Transferencia</p>
+                <p id="mont2" class="monto negativo">$2.000,00</p>
+                <p id="fech2" class="fecha extradata">06/12/18</p>
 
             </div>
             <div id="transferencia3">
-
+                <p id="tipoMov3" class="tipoMovimiento">Sa</p>
+                <p id="mov3" class="movim">Pago becas Santender</p>
+                <p id="tipo3" class="info extradata">Transferencia</p>
+                <span id="mont3" class="monto positivo">$6.000,00</span>
+                <p id="fech3" class="fecha extradata">25/11/18</p>
             </div>
+            <div id="transferencia4">
+                <p id="tipoMov4" class="tipoMovimiento">Sa</p>
+                <p id="mov4" class="movim">Pago becas Santender</p>
+                <p id="tipo4" class="info extradata">Transferencia</p>
+                <span id="mont4" class="monto negativo">$4.000,00</span>
+                <p id="fech4" class="fecha extradata">07/11/18</p>
+            </div>
+            <div id="transferencia5">
+                <p id="tipoMov5" class="tipoMovimiento">Sa</p>
+                <p id="mov5" class="movim">Pago becas Santender</p>
+                <p id="tipo5" class="info extradata">Transferencia</p>
+                <span id="mont5" class="monto negativo">$4.000,00</span>
+                <p id="fech5" class="fecha extradata">07/10/18</p>
+            </div>
+            <div id="transferencia6">
+                <p id="tipoMov6" class="tipoMovimiento">Ne</p>
+                <p id="mov6" class="movim">Netflix</p>
+                <p id="tipo6" class="info extradata">Transferencia</p>
+                <span id="mont6" class="monto negativo">$430,00</span>
+                <p id="fech6" class="fecha extradata">25/11/18</p>
+            </div>
+            <div id="transferencia7">
+                <p id="tipoMov7" class="tipoMovimiento">JA</p>
+                <p id="mov7" class="movim">Jorge Apellido</p>
+                <p id="tipo7" class="info extradata">Transferencia</p>
+                <span id="mont7" class="monto positivo">$6.000,00</span>
+                <p id="fech7" class="fecha extradata">25/11/18</p>
+            </div>
+            <div id="transferencia8">
+                <p id="tipoMov8" class="tipoMovimiento">Sa</p>
+                <p id="mov8" class="movim">Pago becas Santender</p>
+                <p id="tipo8" class="info extradata">Transferencia</p>
+                <span id="mont8" class="monto negativo">$4.000,00</span>
+                <p id="fech8" class="fecha extradata">07/09/18</p>
+            </div>
+            <div id="transferencia9">
+                <p id="tipoMov9" class="tipoMovimiento">Sa</p>
+                <p id="mov9" class="movim">Pago becsdas Santender</p>
+                <p id="tipo9" class="info extradata">Transferencia</p>
+                <span id="mont9" class="monto negativo">$4.000,00</span>
+                <p id="fech9" class="fecha extradata">07/08/18</p>
+            </div>
+            <div id="transferencia10">
+                <p id="tipoMov10" class="tipoMovimiento">JA</p>
+                <p id="mov10" class="movim">Jorge Apellido</p>
+                <p id="tipo10" class="info extradata">Transferencia</p>
+                <span id="mont10" class="monto positivo">$16.000,00</span>
+                <p id="fech10" class="fecha extradata">07/08/18</p>
+            </div>
+
         </div>
         <div id="novedades">Novedades del banco</div>
         <div id="analisis">
