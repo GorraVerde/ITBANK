@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 10% 30% 50% 10%;
+  grid-template-columns: 16% 10% 48% 10% 16%;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  grid-column: 1/6;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  border-bottom: 1px solid;
+}
+
+.user {
+  border-radius: 50%;
+  max-height: 55px;
+}
+
+.itbank {
+  max-height: 50px;
+}
+
+.noti {
+  max-height: 40px;
+}
+
+.user:hover,
+.itbank:hover,
+.noti:hover {
+  cursor: pointer;
+}
+
+nav {
+  background-color: #909cc2;
+  grid-column: 1/2;
+  grid-row: 2/6;
+}
+
+.sidebar {
+  grid-column: 1/2;
+  grid-row: 2/6;
+}
+
+.sidebar ul {
+  margin-top: 1rem;
+}
+
+.sidebar li a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: 500;
+  color: #000;
+  font-size: 1.3rem;
+}
+
+.sidebar li a:hover,
+.sidebar li a:focus {
+  background-color: #808bb1;
+}
+
+main {
+  grid-column: 2/5;
+  grid-row: 2/6;
+  display: grid;
+  grid-template-rows: 40% 55% 5%;
+  grid-template-columns: 15% 70% 15%;
+}
+
+#transferencias {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#emisor {
+  width: 49%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid;
+  font-size: 1rem;
+}
+
+#emisor figure {
+  width: 7%;
+}
+
+#emisor figure img {
+  width: 100%;
+}
+
+.copiar:hover {
+  cursor: pointer;
+}
+
+#emisor-alias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  margin-top: 2rem;
+  border: 1px solid;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+}
+
+#emisor-cvu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem;
+  border: 1px solid;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+}
+
+#emisor article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#receptor {
+  width: 49%;
+  height: 100%;
+  padding: 1rem;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#receptor figure {
+  margin: 0.3rem;
+}
+
+#receptor-datos {
+  width: 90%;
+}
+
+#receptor-datos div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#receptor-datos div label {
+  font-size: 1.2rem;
+  margin: 0.8rem;
+}
+
+#receptor-datos div input {
+  width: 100%;
+  font-size: 1.3rem;
+  height: 45px;
+  border-bottom: 1px solid;
+  text-align: center;
+}
+
+#operaciones {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid;
+}
+
+#operaciones-lista {
+  width: 100%;
+}
+
+#operaciones-lista ul {
+  width: 100%;
+  border-bottom: 1px solid;
+  display: flex;
+  flex-direction: row;
+}
+
+#operaciones-lista ul li {
+  width: 50%;
+  text-align: center;
+}
+
+#operaciones-lista ul li a {
+  display: block;
+  padding: 1rem;
+  color: #000;
+  text-decoration: underline;
+  background-color: #eee;
+}
+
+#operaciones-lista ul li #fav {
+  text-decoration: none;
+  background-color: #fff;
+}
+
+#operaciones-lista ul li a:hover,
+#operaciones-lista ul li a:focus {
+  background-color: #eee;
+}
+
+#datos {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+}
+
+#datos figure {
+  width: 35%;
+}
+
+#datos figure:hover {
+  cursor: pointer;
+}
+
+#datos figure img {
+  width: 100%;
+}
+
+#historial {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#historial figure {
+  width: 8%;
+}
+
+#historial figure img {
+  width: 100%;
+}
+
+#historial h4 {
+  margin: 0.5rem;
+}
+
+#historial-datos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#historial-datos article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+#opciones {
+  width: 10%;
+}
+
+aside {
+  background-color: #909cc2;
+  grid-column: 5/6;
+  grid-row: 2/6;
+}
