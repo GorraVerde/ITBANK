@@ -14,7 +14,7 @@ body {
   width: 100%;
   height: 100%;
   box-sizing: inherit;
-  border: 1px solid black;
+
 }
 
 /* Calculo que el error del font esta por aca. */
@@ -25,9 +25,21 @@ body {
   object-fit: cover;
 }
 
-.borde {
+.izq {
+  grid-column: 1/3;
+  grid-row: 2/6;
+  border-right: 1px solid black;
   background-color: #909cc2;
 }
+
+.der {
+  grid-column: 10/12;
+  grid-row: 2/6;
+  border-left: 1px solid black;
+  background-color: #909cc2;
+}
+
+
 
 .normal {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -132,17 +144,7 @@ body {
   cursor: pointer;
 }
 
-.izq {
-  grid-column: 1/3;
-  grid-row: 2/6;
-  border-right: 1px solid black;
-}
 
-.der {
-  grid-column: 10/12;
-  grid-row: 2/6;
-  border-left: 1px solid black;
-}
 
 /* Aca tengo como un mini quilombo ya que es un grid dentro de otro grid */
 #movimientos {
