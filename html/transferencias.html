@@ -1,111 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ITBANK</title>
-    <link rel="stylesheet" href="../css/transferencia.css" />
-  </head>
 
-  <body>
-    <header>
-      <div id="perfil">
-        <img class="user" src="../Imagenes/pfp.jpg" alt="" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ITBANK</title>
+  <link rel="stylesheet" href="../css/transferencia.css" />
+</head>
+
+<body>
+  <header>
+    <div id="perfil">
+      <img class="user" src="../Imagenes/pfp.jpg" alt="" />
+    </div>
+    <div id="logo">
+      <a href="home_bank.html">
+        <img class="itbank" src="../Imagenes/logoITBANK.png" alt="" />
+      </a>
+    </div>
+    <div id="noti">
+      <img class="noti" src="../Imagenes/noti.png" alt="" />
+    </div>
+  </header>
+  <nav class="sidebar">
+    <ul>
+      <li><a href="home_bank.html"> Inicio </a></li>
+      <li><a href="#"> Perfil </a></li>
+      <li><a href="#"> Fondos </a></li>
+      <li><a href="transferencias.html"> Enviar Dinero </a></li>
+      <li><a href="cotizacion_dolar.html"> Cotizacion del dolar </a></li>
+      <li><a href="#"> Ayuda </a></li>
+      <li><a href="../index.html"> Cerrar sesión </a></li>
+    </ul>
+  </nav>
+  <main>
+    <div id="transferencias">
+      <section id="emisor">
+        <h2>Datos de tu cuenta</h2>
+        <div id="emisor-alias">
+          <article>
+            <h4>Alias:</h4>
+            <p>lorem.itbank</p>
+          </article>
+          <figure>
+            <img src="../Imagenes/copiar.png" alt="" class="copiar" />
+          </figure>
+        </div>
+        <div id="emisor-cvu">
+          <article>
+            <h4>CVU:</h4>
+            <p>01702046600000087865</p>
+          </article>
+          <figure>
+            <img src="../Imagenes/copiar.png" alt="" class="copiar" />
+          </figure>
+        </div>
+      </section>
+      <section id="receptor">
+        <h2>Destinatario</h2>
+        <figure>
+          <img src="../Imagenes/pfp.jpg" alt="" class="user" />
+        </figure>
+        <form action="form.php" method="post" id="receptor-datos">
+          <fieldset>
+            <div>
+              <label for="lbl-destino">Ingresá el CBU, CVU o alias</label>
+              <input type="text" name="destino" id="lbl-destino" />
+            </div>
+            <div>
+              <label for="lbl-monto">¿Cuánto querés transferir?</label>
+              <input type="number" name="monto" id="lbl-monto" placeholder="$" />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </div>
+    <div id="operaciones">
+      <div id="operaciones-lista">
+        <ul>
+          <li><a href="#">Ultimos</a></li>
+          <li><a href="#" id="fav">Favoritos</a></li>
+        </ul>
       </div>
-      <div id="logo">
-        <a href="home_bank.html">
-          <img class="itbank" src="../Imagenes/logoITBANK.png" alt="" />
-        </a>
-      </div>
-      <div id="noti">
-        <img class="noti" src="../Imagenes/noti.png" alt="" />
-      </div>
-    </header>
-    <nav class="sidebar">
-      <ul>
-        <li><a href="home_bank.html"> Inicio </a></li>
-        <li><a href="#"> Perfil </a></li>
-        <li><a href="#"> Fondos </a></li>
-        <li><a href="transferencias.html"> Enviar Dinero </a></li>
-        <li><a href="cotizacion_dolar.html"> Cotizacion del dolar </a></li>
-        <li><a href="#"> Ayuda </a></li>
-        <li><a href="../index.html"> Cerrar sesión </a></li>
-      </ul>
-    </nav>
-    <main>
-      <div id="transferencias">
-        <section id="emisor">
-          <h2>Datos de tu cuenta</h2>
-          <div id="emisor-alias">
-            <article>
-              <h4>Alias:</h4>
-              <p>lorem.itbank</p>
-            </article>
-            <figure>
-              <img src="../Imagenes/copiar.png" alt="" class="copiar" />
-            </figure>
-          </div>
-          <div id="emisor-cvu">
-            <article>
-              <h4>CVU:</h4>
-              <p>01702046600000087865</p>
-            </article>
-            <figure>
-              <img src="../Imagenes/copiar.png" alt="" class="copiar" />
-            </figure>
-          </div>
-        </section>
-        <section id="receptor">
-          <h2>Destinatario</h2>
+      <div id="datos">
+        <div id="historial">
           <figure>
             <img src="../Imagenes/pfp.jpg" alt="" class="user" />
           </figure>
-          <form action="form.php" method="post" id="receptor-datos">
-            <fieldset>
-              <div>
-                <label for="lbl-destino">Ingresá el CBU, CVU o alias</label>
-                <input type="text" name="destino" id="lbl-destino" />
-              </div>
-              <div>
-                <label for="lbl-monto">¿Cuánto querés transferir?</label>
-                <input type="text" name="monto" id="lbl-monto" value="$" />
-              </div>
-            </fieldset>
-          </form>
-        </section>
-      </div>
-      <div id="operaciones">
-        <div id="operaciones-lista">
-          <ul>
-            <li><a href="#">Ultimos</a></li>
-            <li><a href="#" id="fav">Favoritos</a></li>
-          </ul>
-        </div>
-        <div id="datos">
-          <div id="historial">
-            <figure>
-              <img src="../Imagenes/pfp.jpg" alt="" class="user" />
-            </figure>
-            <div id="historial-datos">
-              <article>
-                <h4>Nombre:</h4>
-                <p>Lorem lorem</p>
-              </article>
-              <article>
-                <h4>Banco:</h4>
-                <p>ITBANK</p>
-              </article>
-            </div>
-          </div>
-          <div id="opciones">
-            <figure>
-              <img src="../Imagenes/opcion.png" alt="" />
-            </figure>
+          <div id="historial-datos">
+            <article>
+              <h4>Nombre:</h4>
+              <p>Lorem lorem</p>
+            </article>
+            <article>
+              <h4>Banco:</h4>
+              <p>ITBANK</p>
+            </article>
           </div>
         </div>
+        <div id="opciones">
+          <figure>
+            <img src="../Imagenes/opcion.png" alt="" />
+          </figure>
+        </div>
       </div>
-    </main>
-    <aside class="borde der"></aside>
-  </body>
+    </div>
+  </main>
+  <aside class="borde der"></aside>
+</body>
+
 </html>
