@@ -215,7 +215,7 @@ main {
     grid-row: 1/2;
 }
 
-.fecha {
+.fech {
     grid-column: 3/4;
     grid-row: 2/3;
     text-align: right;
@@ -266,7 +266,17 @@ main {
 #novedades {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    overflow-x: hidden;
+}
+
+#novedades:hover {
+    overflow-x: scroll;
+}
+
+#novedades article {
+    min-width: 200px;
+    margin: 10px;
 }
 
 .borde {
