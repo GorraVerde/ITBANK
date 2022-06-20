@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../css/cotizacion.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../css/dolar.css">
+  <link rel="stylesheet" href="../css/cotizacion.css">
 </head>
 
 <body class="grid">
@@ -39,121 +39,22 @@
   </nav>
   <main>
     <h2 class="text-center m-3">Cotizacion ITBANK</h2>
-    <section class="container">
-      <section id="cotizaciones">
-        <article>
-          <figure class="flex-dolar">
-            <img src="../Imagenes/dolar_oficial.png" alt="">
-            <p class="dolar">Dolar oficial</p>
-          </figure>
-          <div class="compra_venta">
-            <div>
-              <p>Compra</p>
-              <div></div>
-            </div>
-            <div>
-              <p>Venta</p>
-              <div></div>
-            </div>
-          </div>
-          <div class="variacion"> Variacion</div>
-          <div class="fecha">Actualizado</div>
-        </article>
-        <article>
-          <figure class="flex-dolar">
-            <img src="../Imagenes/dolar_blue.png" alt="">
-            <p class="dolar">Dolar blue</p>
-          </figure>
-          <div class="compra_venta">
-            <div>
-              <p>Compra</p>
-              <div></div>
-            </div>
-            <div>
-              <p>Venta</p>
-              <div></div>
-            </div>
-          </div>
-          <div class="variacion"> Variacion</div>
-          <div class="fecha">Actualizado</div>
-        </article>
-        <article>
-          <figure class="flex-dolar">
-            <img src="../Imagenes/dolar_ccl.png" alt="">
-            <p class="dolar">Dolar CCL</p>
-          </figure>
-          <div class="compra_venta">
-            <div>
-              <p>Compra</p>
-              <div></div>
-            </div>
-            <div>
-              <p>Venta</p>
-              <div></div>
-            </div>
-          </div>
-          <div class="variacion"> Variacion</div>
-          <div class="fecha">Actualizado</div>
-        </article>
-        <article>
-          <figure class="flex-dolar">
-            <img src="../Imagenes/dolar_promedio.png" alt="">
-            <p class="dolar">Dolar promedio</p>
-          </figure>
-          <div class="compra_venta">
-            <div>
-              <p>Compra</p>
-              <div></div>
-            </div>
-            <div>
-              <p>Venta</p>
-              </<div>
-            </div>
-          </div>
-          <div class="variacion"> Variacion</div>
-          <div class="fecha">Actualizado</div>
-        </article>
-        <article>
-          <figure class="flex-dolar">
-            <img src="../Imagenes/dolar_bolsa.png" alt="">
-            <p class="dolar">Dolar bolsa</p>
-          </figure>
-          <div class="compra_venta">
-            <div>
-              <p>Compra</p>
-              <div></div>
-            </div>
-            <div>
-              <p>Venta</p>
-              <div></div>
-            </div>
-          </div>
-          <div class="variacion"> Variacion</div>
-          <div class="fecha">Actualizado</div>
-        </article>
-        <article>
-          <figure class="flex-dolar">
-            <img id="turista" src="../Imagenes/dolar_turista.png" alt="">
-            <p class="dolar">Dolar turista</p>
-          </figure>
-          <div class="compra_venta">
-            <div>
-              <p>Compra</p>
-              <div></div>
-            </div>
-            <div>
-              <p>Venta</p>
-              <div></div>
-            </div>
-          </div>
-          <div class="variacion"> Variacion</div>
-          <div class="fecha">Actualizado</div>
-        </article>
-      </section>
+    <section>
+      <div class="container mt-3 p-3">
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Compra</th>
+              <th>Venta</th>
+              <th>Variacion</th>
+            </tr>
+          </thead>
+          <tbody id="data">
+          </tbody>
+        </table>
       </div>
-
     </section>
-    </div>
   </main>
   <aside class="borde der"></aside>
 
@@ -164,6 +65,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
     crossorigin="anonymous"></script>
+  <script src="../js/cotizacion.js"></script>
 </body>
 
 </html>
